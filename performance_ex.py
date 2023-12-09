@@ -1,10 +1,9 @@
-from random import randint
+import numpy as np
 
 
 def print_random():
-    """0～1億の範囲のランダムな数の100万個のリストから0～1億個の範囲のランダムな数の100個のリストが含まれていれば表示する"""
-    base_set = set(randint(0, 100000000) for _ in range(1000000))
-    checked_list = [randint(0, 100000000) for _ in range(100)]
+    base_set = set(np.random.randint(0, 100000000, 1000000))
+    checked_list = np.random.randint(0, 100000000, 100)
 
     for temp in checked_list:
         if temp in base_set:
