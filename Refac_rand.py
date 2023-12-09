@@ -15,7 +15,7 @@ def print_string(param_str, column_count, row_count):
     """
     len_str = len(param_str)
 
-    if not (MIN_LEN<= len_str <= MAX_LEN):
+    if not (MIN_LEN <= len_str <= MAX_LEN):
         
         raise ('文字列は5文字以上10文字以下にしてください')
 
@@ -28,4 +28,5 @@ def print_string(param_str, column_count, row_count):
     for _ in range(column_count):
         result_str += param_str
     for _ in range(row_count):
+
         print(result_str)
